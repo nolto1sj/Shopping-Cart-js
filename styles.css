@@ -1,0 +1,23 @@
+td{
+    padding: 15px;
+    
+}
+
+.center {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #item-row{
+
+} */
+
+#espresso{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cortado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

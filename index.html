@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="center" id="welcome-container">
+      <h1>Welcome!</h1>
+    </div>
+    <div id="cart-container">
+      <!-- <a href="cart.html" onclick = "checkout()">Checkout</a> -->
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    <div id="item-container">
+      <table class="center">
+        <tr class="center">
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+        <tbody id="myTable"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
