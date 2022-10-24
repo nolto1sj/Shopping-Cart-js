@@ -9,10 +9,8 @@ let carrot = new Product("Carrot", 1.00);
 let cheese = new Product("Cheese", 3.00);
 let potato = new Product("Potato", 0.50);
 
-let cartArray = [];
-
-
 var productArray = [carrot, cheese, potato];
+let cartArray = [];
 
 function buildTable(data){
     var table = document.getElementById("myTable")
@@ -22,17 +20,15 @@ function buildTable(data){
         var row = `<tr>
                     <td>${data[i].name}</td>
                     <td>$${data[i].price.toFixed(2)}</td>
-                    <button onclick='addToCart(${JSON.stringify(product)})'>Add To Cart</button>
+                    <td>
+                    <div>
+                    <button id="cart-button" type="button" class="btn btn-secondary" onclick='addToCart(${JSON.stringify(product)})'>Add To Cart</button>
+                    </div>
+                    </td>
                     </tr>`;
                     table.innerHTML += row;
     }
 };
-
-// function addToCart(product){
-//     cartArray.push(product);
-//     console.log(cartArray.length);
-// }
-
 
 buildTable(productArray);
 
@@ -54,6 +50,8 @@ function checkout(){
     }
     console.log("Your total is: $" + total);
     // var displayTotal = document.getElementById("my-total");
+    // displayTotal.innerHTML = `<h2>${total}</h2>`;
+
     // displayTotal.innerHTML = `<h2>${total}</h2>`;
     //alert("Your total is: $" + total.toFixed(2));
    // console.log(total);
